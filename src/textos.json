@@ -1,0 +1,40 @@
+{
+  "nosotros": {
+    "Misión": {
+      "titulo": "Misión",
+      "contenido": "Acompañar a nuestros clientes en el desarrollo de propuestas de promoción de sus productos, enriquecimiento de imagen corporativa para empresas, de branding de marca."
+    },
+    "Visión": {
+      "titulo": "Visión",
+      "contenido": "Ser reconocidos por nuestros clientes y por el mercado como la empresa que brinda el mejor servicio en diseño y comercialización de productos de identidad de marca y de promoción, brindando soluciones oportunas a sus clientes."
+    },
+    "Propuesta": {
+      "titulo": "Propuesta de valor",
+      "contenido": "Public Graphic S.A.S nace después de 8 años de experiencia en esta línea por parte de sus propietarios. Somos una empresa dedicada al diseño y comercialización de artículos de identidad de marca, promocionales, regalos corporativos, material P.O.P., colocación de anuncios y letreros, branding de establecimientos y unidades vehiculares. Nuestros clientes son atendidos por personal comercial que facilitará propuestas de manera inmediata, adaptándose a presupuesto y necesidad de sus clientes."
+    },
+    "imagenes": {
+      "misionVision": {
+        "src": "/Public-Graphic-SA/img/quienesomos1.webp",
+        "alt": "Misión y Visión"
+      },
+      "Propuesta": {
+        "src": "/Public-Graphic-SA/img/quienesomos2.webp",
+        "alt": "Propuesta de valor"
+      }
+    }
+  },
+  "contacto": {
+    "titulo": "Nuestras redes sociales",
+    "contenido": "2024"
+  },
+  "menu": {
+    "inicio": "Inicio",
+    "nosotros": "Nosotros",
+    "servicios": "Servicios",
+    "contacto": "Contacto",
+    "img": {
+      "src": "/Public-Graphic-SA/img/logo_inicio.webp",
+      "alt": "Logo de la página"
+    }
+  }
+}

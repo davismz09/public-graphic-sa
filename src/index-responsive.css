@@ -1,0 +1,307 @@
+/* Estilos para pantallas de hasta 900px */
+@media screen and (max-width: 900px) {
+    .carousel-root {
+        max-width: 70%;
+    }
+
+    .header {
+        height: 500px;
+        background-size: auto 35%, auto 35%, cover;
+        background-position: top left, right bottom, center;
+    }
+
+    .logo_inicio {
+        width: 350px;
+    }
+
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos,
+    .imagen-about-us {
+        width: 90%;
+    }
+
+    .contenedor-footer {
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+    }
+}
+
+/* Estilos para pantallas de hasta 768px */
+@media screen and (max-width: 768px) {
+    .carousel-root {
+        width: 50%;
+    }
+
+    .carousel .slide {
+        width: 100%;
+    }
+
+    .carousel .slide img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .capa--opacity.active {
+        visibility: initial;
+        width: 100%;
+        height: 100vh;
+        right: 100;
+        transition: 0.2s ease all;
+        background-color: rgba(255, 255, 255, 0.077);
+    }
+
+    nav {
+        justify-content: center;
+        padding: 30px 0 0 0;
+    }
+
+    .menu {
+        width: 90%;
+        height: max-content;
+        font-size: 14px;
+        flex-direction: column;
+        position: fixed;
+        gap: 0px;
+        left: 50%;
+        top: -100%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        border-radius: 10px;
+        background: rgba(0, 157, 224, 0.649);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        cursor: pointer;
+        color: #fff;
+        padding: 0;
+        transition: top 0.4s ease-in-out;
+    }
+
+    .menu.active {
+        top: 25%;
+        transition: top 0.4s ease-in-out;
+    }
+
+    .menu a {
+        width: 100%;
+        height: 38px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.065);
+        padding: 0 10px;
+        text-align: start;
+        display: flex;
+        align-items: center;
+    }
+
+    .buttonOpenMenu,
+    .buttonCloseMenu {
+        width: 40px;
+        height: 40px;
+        justify-self: end;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1;
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        line-height: 0.1;
+        transition: 0.4s ease all;
+    }
+
+    .buttonOpenMenu.active,
+    .buttonCloseMenu.inactive {
+        top: -100%;
+    }
+
+    .buttonOpenMenu:hover,
+    .buttonCloseMenu:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+    }
+
+    .buttonOpenMenu:focus,
+    .buttonCloseMenu:focus {
+        outline: none;
+    }
+
+    /* Main */
+    .contenido-textos {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .contenedor-mision-vision,
+    .contenedor-propuesta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-mision-vision img,
+    .contenedor-propuesta img {
+        width: 95%;
+    }
+
+    .sobre-nosotros .titulo {
+        font-size: 40px;
+    }
+
+    .titulos {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .signo {
+        font-size: 60px;
+    }
+
+    .portafolio,
+    .portafolio_container {
+        background-size: 40%, 40%;
+    }
+
+    .imagen-port {
+        width: 55%;
+    }
+
+    .portafolio_container {
+        padding: 120px 0;
+    }
+}
+
+/* Estilos para pantallas de hasta 500px */
+@media screen and (max-width: 500px) {
+    .carousel-root {
+        width: 80%;
+    }
+
+    .logo_inicio {
+        width: 200px;
+    }
+
+    .textos-header h1 {
+        font-size: 35px;
+    }
+
+    .textos-header h2 {
+        font-size: 20px;
+    }
+
+    /* About Us */
+    .imagen-about-us {
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 95%;
+    }
+
+    .contenedor-mision-vision img,
+    .contenedor-propuesta img {
+        width: 95%;
+    }
+
+    .portafolio,
+    .portafolio_container {
+        background-size: 70%, 70%;
+    }
+
+    .imagen-port {
+        width: 80%;
+    }
+
+    /* Footer */
+
+    .titulo-final {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .contenedor-footer a {
+        font-size: 16px;
+    }
+
+    footer {
+        height: 270px;
+    }
+
+    footer::before {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+/* Estilos para pantallas de al menos 768px */
+@media screen and (min-width: 768px) {
+
+    .contenedor-mision-vision img,
+    .contenedor-propuesta img {
+        width: 50%;
+    }
+
+    .portafolio,
+    .portafolio_container {
+        background-size: 25%, 25%;
+    }
+
+    .portafolio_container {
+        padding: 50px 0;
+    }
+
+    .imagen-port {
+        width: 100%;
+    }
+
+    .portafolio_producto .imagen-port {
+        width: 50%;
+    }
+
+    .galeria-port {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .container-imagen-port {
+        width: 35%;
+        align-self: start;
+    }
+
+    .portafolio_producto .container-imagen-port {
+        flex-direction: row;
+        gap: 50px;
+        width: 40%;
+        align-self: center;
+    }
+
+    .carousel-root {
+        width: 30%;
+    }
+}
+
+/* Estilos para pantallas de al menos 1024px */
+@media screen and (min-width: 1024px) {
+    .container-imagen-port {
+        width: 20%;
+    }
+
+    .portafolio_producto .imagen-port {
+        width: 25%;
+    }
+}

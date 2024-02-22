@@ -1,0 +1,89 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "imagen": "/Public-Graphic-SA/img/1.webp",
+      "titulo": "Promocionales",
+      "lista": ["Lineas", "Bamboo", "Ecología", "Corcho", "Kraft"],
+      "carrusel": {
+        "imagen1": {
+          "url": "/Public-Graphic-SA/img/lineas_promocionales_01.webp",
+          "alt": "Promocionales 1",
+          "codigo": "PROM-0001"
+        },
+        "imagen2": {
+          "url": "/Public-Graphic-SA/img/lineas_promocionales_02.webp",
+          "alt": "Promocionales 2",
+          "codigo": "PROM-0002"
+        },
+        "imagen3": {
+          "url": "/Public-Graphic-SA/img/lineas_promocionales_03.webp",
+          "alt": "Promocionales 3",
+          "codigo": "PROM-0003"
+        },
+        "imagen4": {
+          "url": "/Public-Graphic-SA/img/lineas_promocionales_04.webp",
+          "alt": "Promocionales 4",
+          "codigo": "PROM-0004"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "imagen": "/Public-Graphic-SA/img/2.webp",
+      "titulo": "Material p.o.p",
+      "lista": ["Agendas", "Boligrafos", "Termos", "Camisas", "Jarros"]
+    },
+    {
+      "id": 3,
+      "imagen": "/Public-Graphic-SA/img/3.webp",
+      "titulo": "Branding",
+      "lista": ["Carros", "Furgonetas", "Mamparas (Parcial Completo)"]
+    },
+    {
+      "id": 4,
+      "imagen": "/Public-Graphic-SA/img/4.webp",
+      "titulo": "Diseños",
+      "lista": ["Logos", "Campañas", "Manuales"]
+    },
+    {
+      "id": 5,
+      "imagen": "/Public-Graphic-SA/img/5.webp",
+      "titulo": "Papeleria",
+      "lista": [
+        "Calendarios",
+        "Tarjetas",
+        "Revistas",
+        "Agendas",
+        "Recetarios",
+        "Volantes",
+        "Tripticos"
+      ]
+    },
+    {
+      "id": 6,
+      "imagen": "/Public-Graphic-SA/img/6.webp",
+      "titulo": "Sublimacion",
+      "lista": [
+        "Bordado",
+        "Serigrafia",
+        "Estampado",
+        "Camisas",
+        "Mochilas",
+        "Jarros"
+      ]
+    },
+    {
+      "id": 7,
+      "imagen": "/Public-Graphic-SA/img/7.webp",
+      "titulo": "Uniformes",
+      "lista": ["Industrial", "Medico"]
+    },
+    {
+      "id": 8,
+      "imagen": "/Public-Graphic-SA/img/8.webp",
+      "titulo": "Impresión",
+      "lista": ["Stickers"]
+    }
+  ]
+}
