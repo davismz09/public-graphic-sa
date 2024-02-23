@@ -1,14 +1,9 @@
-import {useNavigate, useParams} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 export default function ImagePortafolio({producto}) {
   const navigate = useNavigate();
-  const params = useParams();
 
-  const handleClick = () => {
-    params.id == producto.id
-      ? navigate("/")
-      : navigate(`/productos/${producto.id}`);
-  };
+  const handleClick = () => navigate(`/productos/${producto.id}`);
 
   return (
     <div className='container-imagen-port' onClick={handleClick}>

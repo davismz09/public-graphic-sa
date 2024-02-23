@@ -23,7 +23,9 @@ const useMenu = () => {
 
   const handleClick = (sectionId, event) => {
     event.preventDefault(); // Evita que el enlace se siga
-    scrollToSection(sectionId);
+    setTimeout(() => {
+      scrollToSection(sectionId);
+    }, 100);
   };
 
   return {
