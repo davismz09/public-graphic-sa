@@ -2,6 +2,8 @@ import {useState, useRef, useEffect} from "react";
 
 function useIntersection(opciones = {}) {
   const [isIntersecting, setIsIntersecting] = useState(false);
+  const [hasIntersectedOnce, setHasIntersectedOnce] = useState(false); // Nuevo estado para verificar si ya se intersectó
+
   const elementoRef = useRef();
 
   useEffect(() => {
@@ -9,7 +11,10 @@ function useIntersection(opciones = {}) {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        setIsIntersecting(entry.isIntersecting);
+        if (!hasIntersectedOnce && entry.isIntersecting) {
+          setIsIntersecting(true);
+          setHasIntersectedOnce(true); // Se marca como intersectado una vez que se ha observado
+        }
       });
     }, opciones);
 
@@ -20,7 +25,7 @@ function useIntersection(opciones = {}) {
     return () => {
       if (elemento) observer.unobserve(elemento);
     };
-  }, [opciones]);
+  }, [opciones, hasIntersectedOnce]); // Añadir hasIntersectedOnce al array de dependencias
 
   return [elementoRef, isIntersecting];
 }
