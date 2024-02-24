@@ -1,4 +1,15 @@
 {
+  "menu": {
+    "inicio": "Inicio",
+    "nosotros": "Nosotros",
+    "servicios": "Servicios",
+    "contacto": "Contacto",
+    "img": {
+      "src": "/Public-Graphic-SA/img/logo_inicio.webp",
+      "alt": "Logo de la página"
+    }
+  },
+
   "nosotros": {
     "Misión": {
       "titulo": "Misión",
@@ -23,18 +34,9 @@
       }
     }
   },
+
   "contacto": {
     "titulo": "Nuestras redes sociales",
     "contenido": "2024"
-  },
-  "menu": {
-    "inicio": "Inicio",
-    "nosotros": "Nosotros",
-    "servicios": "Servicios",
-    "contacto": "Contacto",
-    "img": {
-      "src": "/Public-Graphic-SA/img/logo_inicio.webp",
-      "alt": "Logo de la página"
-    }
   }
 }

@@ -1,12 +1,13 @@
 import {nosotros} from "../textos.json";
 import useIntersection from "./Hooks/useInterseccion.jsx";
+import Signo from "../components/Signo.jsx";
 
 export default function Nosotros() {
   const [titulosRef, isIntersecting] = useIntersection({threshold: 0.7});
   const [imgMVRef, isIntersecting2] = useIntersection({threshold: 0.5});
   const [imgPRef, isIntersecting3] = useIntersection({threshold: 0.5});
 
-  const handleVisibility = (entry) => (entry ? "visible" : "");
+  const handleVisibility = (entry) => entry && "visible";
 
   const {Misión, Visión, Propuesta, imagenes} = nosotros;
   return (
@@ -16,9 +17,9 @@ export default function Nosotros() {
           isIntersecting,
         )}`}>
         <h2 className='titulo' ref={titulosRef}>
-          <span>Quienes</span> <br /> Somos{" "}
+          <span>Quienes</span> <br /> Somos
         </h2>
-        <span className='signo'>?</span>
+        <Signo />
       </div>
       <div className='contenedor-sobre-nosotros'>
         <div className='contenido-textos'>

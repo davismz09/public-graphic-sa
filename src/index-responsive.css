@@ -160,11 +160,11 @@
 
     .titulos {
         justify-content: center;
-        gap: 10px;
     }
 
     .signo {
-        font-size: 60px;
+        width: 90px;
+        height: 90px;
     }
 
     .portafolio,

@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: 'Nexa', sans-serif;
     color: rgb(60, 60, 62);
@@ -54,25 +58,26 @@ nav>a:hover {
     display: flex;
     text-align: center;
     justify-content: end;
-    gap: 20px;
     align-items: center;
 }
 
 .titulo {
-    font-size: 90px;
-    font-weight: 700;
+    font-size: 80px;
     text-align: end;
     line-height: .9;
+    color: black;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .titulo>span {
+    font-weight: 700;
     color: rgb(0, 156, 224);
 }
 
 .signo {
-    font-size: 230px;
-    font-weight: bolder;
+    width: 160px;
+    height: 160px;
     color: rgb(227, 0, 126);
 }
 
@@ -133,6 +138,9 @@ nav>a:hover {
 /* About us */
 main .sobre-nosotros {
     width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
     padding: 30px 0 60px 0;
 }
 
@@ -140,6 +148,7 @@ main .sobre-nosotros {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    gap: 50px;
     flex-direction: row;
 }
 
@@ -147,7 +156,7 @@ main .sobre-nosotros {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 20px;
     text-transform: uppercase;
     padding: 10px;
 }
@@ -166,7 +175,7 @@ main .sobre-nosotros {
 .contenedor-mision-vision {
     width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 10px;
     flex-direction: row;
     align-items: center;
 }
@@ -174,7 +183,7 @@ main .sobre-nosotros {
 .contenedor-propuesta {
     width: 100%;
     display: flex;
-    gap: 50px;
+    gap: 10px;
     flex-direction: row-reverse;
     align-items: center;
 }
