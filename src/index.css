@@ -90,7 +90,7 @@ nav>a:hover {
 /*Esquineras*/
 .portafolio,
 .portafolio_container {
-    background-image: url(/Public-Graphic-SA/img/esquineras1.png), url(/Public-Graphic-SA/img/esquineras2.png);
+    background-image: url(/Public-Graphic-SA/img/esquineras1.webp), url(/Public-Graphic-SA/img/esquineras2.webp);
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
 }
@@ -102,7 +102,7 @@ nav>a:hover {
     display: flex;
     position: relative;
     background: hsl(340, 4%, 27%);
-    background-image: url(/Public-Graphic-SA/img/esquineras1.png), url(/Public-Graphic-SA/img/esquineras2.png), url(/Public-Graphic-SA/img/fondo_imagen.webp);
+    background-image: url(/Public-Graphic-SA/img/esquineras1.webp), url(/Public-Graphic-SA/img/esquineras2.webp), url(/Public-Graphic-SA/img/fondo_imagen.webp);
     background-size: auto 40%, auto 40%, cover;
     background-repeat: no-repeat;
     background-position: top left, right bottom, center;
