@@ -56,6 +56,7 @@ const ProductoLista = () => {
                       showArrows
                       interval={1500}
                       showStatus={false}
+                      showThumbs={false}
                       className={`imagen-port--animation ${handleVisibility(
                         isIntersecting,
                       )}`}>

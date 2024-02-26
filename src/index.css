@@ -228,27 +228,12 @@ main .sobre-nosotros {
     transform: translateY(-50%);
 }
 
-.carousel .thumbs-wrapper {
-    display: flex;
+.carousel.carousel-slider {
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    padding: 10px;
 }
 
-.carousel .thumbs-wrapper ul {
-    display: flex;
-    justify-content: center;
-}
-
-.carousel-root .carousel .slide img {
-    cursor: pointer;
-}
-
-.thumbs .thumb {
-    cursor: pointer;
-}
-
-.thumbs .thumb.selected {
-    border-color: #006994;
-
-}
 
 .portafolio {
     position: relative;
