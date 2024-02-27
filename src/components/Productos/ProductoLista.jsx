@@ -15,9 +15,19 @@ const ProductoLista = () => {
   const [loading, setLoading] = useState(true);
   const handleVisibility = (entry) => (loading !== entry ? "visible" : "");
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({behavior: "smooth"});
+    }
+  };
+
   const handleClick = (event) => {
-    event.preventDefault();
     navigate("/");
+    event.preventDefault();
+    setTimeout(() => {
+      scrollToSection("servicios");
+    }, 100);
   };
 
   useEffect(() => {
