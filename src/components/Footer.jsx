@@ -6,7 +6,9 @@ export default function Footer() {
   return (
     <footer id='contacto'>
       <div className='contenedor-footer'>
-        <a href='#'>{titulo}</a>
+        <a href='https://linktr.ee/PublicGraphic' target='_blank'>
+          {titulo}
+        </a>
         <h2 className='titulo-final'>{contenido} </h2>
       </div>
     </footer>

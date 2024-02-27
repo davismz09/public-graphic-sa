@@ -12,10 +12,6 @@
     font-style: normal;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 body {
     font-family: 'Nexa', sans-serif;
     color: rgb(60, 60, 62);

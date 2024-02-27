@@ -84,6 +84,7 @@
     }
 
     .menu.active {
+        height: max-content;
         top: 135px;
         transition: top 0.4s ease-in-out;
     }
