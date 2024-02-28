@@ -24,12 +24,10 @@ export default function Nosotros() {
         </div>
         <div className='contenedor-sobre-nosotros'>
           <div className='contenido-textos'>
-            <div className='contenedor-mision-vision'>
+            <div className='contenedor-mision'>
               <div>
                 <h3>{Misión.titulo}</h3>
                 <p>{Misión.contenido}</p>
-                <h3>{Visión.titulo}</h3>
-                <p>{Visión.contenido}</p>
               </div>
               <img
                 ref={imgMVRef}
@@ -38,6 +36,21 @@ export default function Nosotros() {
                 className={`imagen-mision-vision imgMV--animation ${handleVisibility(
                   isIntersecting2,
                 )}`}
+              />
+            </div>
+
+            <div className='contenedor-vision'>
+              <div>
+                <h3>{Visión.titulo}</h3>
+                <p>{Visión.contenido}</p>
+              </div>
+              <img
+                ref={imgPRef}
+                className={`imgP--animation ${handleVisibility(
+                  isIntersecting3,
+                )}`}
+                src={imagenes.Propuesta.src}
+                alt={imagenes.Propuesta.alt}
               />
             </div>
             <div className='contenedor-propuesta'>
@@ -50,11 +63,10 @@ export default function Nosotros() {
                 className={`imgP--animation ${handleVisibility(
                   isIntersecting3,
                 )}`}
-                src={imagenes.Propuesta.src}
-                alt={imagenes.Propuesta.alt}
+                src={imagenes.img1.src}
+                alt={imagenes.img1.alt}
               />
             </div>
-            <img src={imagenes.img1.src} alt={imagenes.img1.alt} />
           </div>
         </div>
       </div>

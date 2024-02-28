@@ -210,6 +210,17 @@ main .sobre-nosotros {
     padding: 30px 0 60px 0;
 }
 
+.sobre-nosotros .contenido-textos,
+.imagen-about-us {
+    width: 100%;
+}
+
+.sobre-nosotros .contenedor {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
 .contenedor-sobre-nosotros {
     width: 100%;
     display: flex;
@@ -222,7 +233,7 @@ main .sobre-nosotros {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     text-transform: uppercase;
     padding: 10px;
 }
@@ -234,10 +245,11 @@ main .sobre-nosotros {
     display: block;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 
-.contenedor-mision-vision {
+.contenedor-mision,
+.contenedor-vision,
+.contenedor-propuesta {
     width: 100%;
     display: flex;
     gap: 10px;
@@ -245,12 +257,8 @@ main .sobre-nosotros {
     align-items: center;
 }
 
-.contenedor-propuesta {
-    width: 100%;
-    display: flex;
-    gap: 10px;
+.contenedor-vision {
     flex-direction: row-reverse;
-    align-items: center;
 }
 
 .contenido-textos h3 {

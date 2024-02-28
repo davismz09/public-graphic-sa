@@ -9,7 +9,7 @@ import useIntersection from "../Hooks/useInterseccion.jsx";
 const ProductoLista = () => {
   const {items} = data;
   const params = useParams();
-  const imgRef = useIntersection();
+  const [imgRef, isIntersecting] = useIntersection();
   const [loading, setLoading] = useState(true);
   const currentItem = items.find((item) => item.id === parseInt(params.id));
 
@@ -37,7 +37,7 @@ const ProductoLista = () => {
   return (
     <main className='portafolio_container'>
       <section className='portafolio_producto' key={currentItem?.id}>
-        <h2 ref={imgRef} className='titulo-servicios'>
+        <h2 ref={imgRef.current} className='titulo-servicios'>
           {currentItem?.titulo}
         </h2>
         {loading ? (
@@ -51,7 +51,7 @@ const ProductoLista = () => {
             showStatus={false}
             showThumbs={false}
             className={`imagen-port--animation ${
-              imgRef.current && imgRef.current.isIntersecting ? "visible" : ""
+              isIntersecting ? "visible" : ""
             }`}>
             {Object.values(currentItem.carrusel).map((imagen) => (
               <div key={imagen.codigo}>
@@ -63,7 +63,7 @@ const ProductoLista = () => {
         ) : (
           <div
             className={`imagen-port imagen-port--animation ${
-              imgRef.current && imgRef.current.isIntersecting ? "visible" : ""
+              isIntersecting ? "visible" : ""
             }`}>
             <img src={currentItem.imagen} alt={currentItem.titulo} />
           </div>
