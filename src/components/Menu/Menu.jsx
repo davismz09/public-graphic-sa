@@ -33,6 +33,9 @@ export default function Menu({menu, handleClick, isMenuOpen}) {
       <a href='#servicios' onClick={(e) => handleClick("servicios", e)}>
         {menu.servicios}
       </a>
+      <a href='#contactos' onClick={(e) => handleClick("contactos", e)}>
+        {menu.contacto}
+      </a>
     </nav>
   );
 }

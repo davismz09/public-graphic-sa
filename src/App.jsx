@@ -4,8 +4,8 @@ import Nosotros from "./components/Nosotros.jsx";
 import Portafolio from "./components/Productos/Portafolio";
 import Home from "./Home.jsx";
 import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
 import Error404Page from "./Error404.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
@@ -15,10 +15,10 @@ export default function App() {
         <Route path='' element={<Home />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Portafolio />} />
+        <Route path='contactos' element={<Footer />} />
         <Route path='productos/:id' element={<ProductoLista />} />
         <Route path='*' element={<Error404Page />} />
       </Routes>
-      <Footer />
     </HashRouter>
   );
 }
