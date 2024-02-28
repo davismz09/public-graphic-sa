@@ -107,6 +107,15 @@ nav>a:hover {
     padding-left: 30px;
 }
 
+.header .container-header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 100%;
+    background-color: #fff;
+}
+
 .hero {
     max-width: 100%;
     display: flex;

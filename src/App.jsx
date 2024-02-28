@@ -14,8 +14,9 @@ export default function App() {
       <Routes>
         <Route path='' element={<Home />} />
         <Route path='/nosotros' element={<Nosotros />} />
-        <Route path='/servicios' element={<Portafolio />} />
-        <Route path='productos/:id' element={<ProductoLista />} />
+        <Route path='/productos' element={<Portafolio />} />
+        <Route path='/productos/:id' element={<ProductoLista />} />
+
         <Route path='contactos' element={<Contacto />} />
         <Route path='*' element={<Error404Page />} />
       </Routes>

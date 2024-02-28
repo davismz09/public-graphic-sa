@@ -43,7 +43,11 @@ const Home = () => {
         </div>
         <div className='galeria-port'>
           {items.map((item) => (
-            <ImagePortafolio key={item.titulo} producto={item} />
+            <ImagePortafolio
+              key={item.titulo}
+              producto={item}
+              baseRoute={"/productos"}
+            />
           ))}
         </div>
       </div>

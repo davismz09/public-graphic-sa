@@ -1,9 +1,9 @@
 import {useNavigate} from "react-router-dom";
 
-export default function ImagePortafolio({producto}) {
+const ImagePortafolio = ({producto, baseRoute}) => {
   const navigate = useNavigate();
 
-  const handleClick = () => navigate(`/productos/${producto.id}`);
+  const handleClick = () => navigate(`${baseRoute}/${producto.id}`);
 
   return (
     <div className='container-imagen-port' onClick={handleClick}>
@@ -13,15 +13,21 @@ export default function ImagePortafolio({producto}) {
       <div className='textos-galeria'>
         <h3>{producto.titulo}</h3>
         {producto.lista ? (
-          <ul className='list-galeria'>
-            {producto.lista.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <List items={producto.lista} />
         ) : (
           <p>Codigo {producto.codigo}</p>
         )}
       </div>
     </div>
   );
-}
+};
+
+const List = ({items}) => (
+  <ul className='list-galeria'>
+    {items.map((item, index) => (
+      <li key={index}>{item}</li>
+    ))}
+  </ul>
+);
+
+export default ImagePortafolio;

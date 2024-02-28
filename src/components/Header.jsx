@@ -33,12 +33,14 @@ export default function Header() {
         toggleMenu={toggleMenu}
         closeMenuOnClick={closeMenuOnClick}
       />
-      <img
-        onClick={(e) => handleClick("", e)}
-        style={{height: "55px"}}
-        src={menu.img.src}
-        alt='Logo Public Graphic'
-      />
+      <div className='container-header-image'>
+        <img
+          onClick={(e) => handleClick("", e)}
+          style={{height: "55px"}}
+          src={menu.img.src}
+          alt='Logo Public Graphic'
+        />
+      </div>
       <Menu menu={menu} handleClick={handleClick} isMenuOpen={isMenuOpen} />
     </header>
   );
