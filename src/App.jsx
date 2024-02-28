@@ -15,8 +15,8 @@ export default function App() {
         <Route path='' element={<Home />} />
         <Route path='/nosotros' element={<Nosotros />} />
         <Route path='/servicios' element={<Portafolio />} />
-        <Route path='contactos' element={<Contacto />} />
         <Route path='productos/:id' element={<ProductoLista />} />
+        <Route path='contactos' element={<Contacto />} />
         <Route path='*' element={<Error404Page />} />
       </Routes>
     </HashRouter>

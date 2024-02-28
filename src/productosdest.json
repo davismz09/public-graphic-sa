@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": 5,
+      "imagen": "/Public-Graphic-SA/img/papeleria-05.webp",
+      "titulo": "Tarjetas de presentación",
+      "codigo": "PAPE-0005"
+    },
+    {
+      "id": 2,
+      "imagen": "/Public-Graphic-SA/img/material_pop-01.webp",
+      "titulo": "Boligrafos",
+      "codigo": "POP-0001"
+    },
+    {
+      "id": 3,
+      "imagen": "/Public-Graphic-SA/img/branding-02.webp",
+      "titulo": "Etiquetas",
+      "codigo": "BRAND-0002"
+    },
+    {
+      "id": 5,
+      "imagen": "/Public-Graphic-SA/img/material_pop-05.webp",
+      "titulo": "Papelería",
+      "codigo": "POP-0005"
+    }
+  ]
+}

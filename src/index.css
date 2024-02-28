@@ -30,7 +30,7 @@ nav {
     padding: 10px 30px;
 }
 
-nav>a {
+nav .botonesNav>a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
@@ -39,12 +39,12 @@ nav>a {
     cursor: pointer;
 }
 
-nav>a:hover {
+nav .botonesNav>a:hover {
     color: rgba(255, 255, 255, 0.849);
 }
 
 .contenedor {
-    padding: 70px 0;
+    padding: 120px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -86,47 +86,66 @@ nav>a:hover {
 
 /*Esquineras*/
 .portafolio,
-.portafolio_container {
+.portafolio_container,
+.sobre-nosotros {
     background-image: url(/Public-Graphic-SA/img/esquineras1.webp), url(/Public-Graphic-SA/img/esquineras2.webp);
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
 }
 
-/* Header */
-.header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 111;
-    background: rgba(0, 157, 224, 0.649);
-}
-
-.menu.scroll {
-    height: 45px;
-    background-color: rgba(0, 0, 0, 0.753);
-    backdrop-filter: blur(5px);
-    transition: 0.7s ease all;
-}
-
 .hero {
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: url(/Public-Graphic-SA/img/esquineras1.webp), url(/Public-Graphic-SA/img/esquineras2.webp), url(/Public-Graphic-SA/img/fondo_imagen.webp);
-    background-size: auto 40%, auto 40%, cover;
-    background-repeat: no-repeat;
-    background-position: top left, right bottom, center;
 }
 
-.logo_inicio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
+.contenido-hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textos-hero {
+    width: 90%;
+}
+
+.contenido-hero .textos-hero .titulo-hero {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.titulo-lineas-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-hero {
+    background-color: rgb(0, 149, 217);
+    padding: 5px 15px;
+}
+
+.linea {
+    height: 4px;
+    width: 30%;
+    background-color: rgb(0, 149, 217);
+}
+
+.contenido-hero .galeria-port .container-imagen-port .textos-galeria {
+    font-size: 16px;
+    flex-direction: column-reverse;
+
 }
 
 /* MENU */
@@ -137,16 +156,30 @@ nav>a:hover {
 
 .menu {
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     gap: 60px;
     padding-right: 60px;
-    background-color: rgba(0, 0, 0, 0.123);
+    background: rgba(220, 17, 129, 0.801);
     backdrop-filter: blur(0.2px);
     -webkit-backdrop-filter: blur(0.2px);
     transition: 0.7s ease all;
+}
+
+.menu .botonesNav {
+    display: flex;
+    gap: 60px;
+
+}
+
+.logo_inicio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
 }
 
 /* About us */
@@ -175,8 +208,7 @@ main .sobre-nosotros {
     padding: 10px;
 }
 
-.contenedor-mision-vision img,
-.contenedor-propuesta img {
+.contenedor-sobre-nosotros img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -204,6 +236,7 @@ main .sobre-nosotros {
 
 .contenido-textos h3 {
     color: rgb(227, 0, 126);
+    font-size: 28px;
     margin-bottom: 15px;
 }
 
@@ -222,6 +255,7 @@ main .sobre-nosotros {
 
 .contenido-textos p {
     padding: 15px 15px;
+    font-size: 18px;
     font-weight: 300;
     text-align: justify;
     word-wrap: break-word;
@@ -229,7 +263,7 @@ main .sobre-nosotros {
 
 /* Portfolio */
 /* Estilos para las flechas de navegación */
-.carousel.carousel-slider .control-arrow {
+.portafolio_container .carousel.carousel-slider .control-arrow {
     width: 40px;
     height: 40px;
     color: #006994;
@@ -242,7 +276,7 @@ main .sobre-nosotros {
     transform: translateY(-50%);
 }
 
-.carousel.carousel-slider {
+.portafolio_container .carousel.carousel-slider {
     border-radius: 15px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
     padding: 10px;
@@ -533,51 +567,37 @@ main .sobre-nosotros {
 
 /****************************************************/
 
-.error-404-page {
+
+/* Estilos para el carrusel específico */
+.carousel-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f7f7f7;
+    gap: 20px;
 }
 
-.error-container {
-    text-align: center;
+/* Estilos para el carrusel */
+.carousel-container .fullscreen-carousel {
+    width: 85%;
 }
 
-.error-heading {
-    font-size: 64px;
-    color: #e74c3c;
-    /* Rojo */
-    margin-bottom: 20px;
+.fullscreen-carousel .carousel .carousel-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.error-message {
-    font-size: 24px;
-    margin-bottom: 40px;
+.fullscreen-carousel .carousel .carousel-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 
-.error-description {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.error-404 {
-    font-size: 100px;
-    color: #e74c3c;
-    /* Rojo */
-    margin-bottom: 20px;
-}
-
-.home-link {
-    font-size: 18px;
-    color: #3498db;
-    /* Azul */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.home-link:hover {
-    color: #2980b9;
-    /* Azul más oscuro */
+.fullscreen-carousel .control-dots .dot {
+    width: 20px;
+    height: 20px;
 }

@@ -21,21 +21,22 @@ export default function Menu({menu, handleClick, isMenuOpen}) {
 
   return (
     <nav
-      className={`menu ${scrolling ? "scroll" : ""} ${
-        isMenuOpen ? "active" : ""
+      className={`menu  ${isMenuOpen ? "active" : ""} ${
+        scrolling ? "scroll" : ""
       }`}>
-      <a href='' onClick={(e) => handleClick("", e)}>
-        {menu.inicio}
-      </a>
-      <a href='#nosotros' onClick={(e) => handleClick("nosotros", e)}>
-        {menu.nosotros}
-      </a>
-      <a href='#servicios' onClick={(e) => handleClick("servicios", e)}>
-        {menu.servicios}
-      </a>
-      <a href='#contactos' onClick={(e) => handleClick("contactos", e)}>
-        {menu.contacto}
-      </a>
+      <img
+        onClick={(e) => handleClick("", e)}
+        style={{height: "55px"}}
+        src={menu.img.src}
+        alt='Logo Public Graphic'
+      />
+      <div className='botonesNav'>
+        <a onClick={(e) => handleClick("", e)}>{menu.inicio}</a>
+        <a onClick={(e) => handleClick("nosotros", e)}>{menu.nosotros}</a>
+        <a onClick={(e) => handleClick("servicios", e)}>{menu.servicios}</a>
+        <a onClick={(e) => handleClick("trabajos", e)}>{menu.trabajo}</a>
+        <a onClick={(e) => handleClick("contactos", e)}>{menu.contacto}</a>
+      </div>
     </nav>
   );
 }

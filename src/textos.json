@@ -1,9 +1,10 @@
 {
   "menu": {
-    "inicio": "Inicio",
+    "inicio": "Home",
     "nosotros": "Nosotros",
     "servicios": "Servicios",
     "contacto": "Contacto",
+    "trabajo": "Trabajo",
     "img": {
       "src": "/Public-Graphic-SA/img/logo_inicio.webp",
       "alt": "Logo de la página"
@@ -31,6 +32,10 @@
       "Propuesta": {
         "src": "/Public-Graphic-SA/img/quienesomos2.webp",
         "alt": "Propuesta de valor"
+      },
+      "img1": {
+        "src": "/Public-Graphic-SA/img/nosotros_final.webp",
+        "alt": "Imagen 1"
       }
     }
   },
