@@ -25,17 +25,17 @@
       "contenido": "Public Graphic S.A.S nace después de 8 años de experiencia en esta línea por parte de sus propietarios. Somos una empresa dedicada al diseño y comercialización de artículos de identidad de marca, promocionales, regalos corporativos, material P.O.P., colocación de anuncios y letreros, branding de establecimientos y unidades vehiculares. Nuestros clientes son atendidos por personal comercial que facilitará propuestas de manera inmediata, adaptándose a presupuesto y necesidad de sus clientes."
     },
     "imagenes": {
-      "misionVision": {
+      "mision": {
         "src": "/Public-Graphic-SA/img/quienesomos1.webp",
-        "alt": "Misión y Visión"
+        "alt": "Misión"
       },
-      "Propuesta": {
+      "vision": {
         "src": "/Public-Graphic-SA/img/quienesomos2.webp",
-        "alt": "Propuesta de valor"
+        "alt": "Visión"
       },
-      "img1": {
+      "propuesta": {
         "src": "/Public-Graphic-SA/img/nosotros_final.webp",
-        "alt": "Imagen 1"
+        "alt": "Propuesta de valor"
       }
     }
   },

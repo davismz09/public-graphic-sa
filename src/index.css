@@ -521,13 +521,25 @@ main .sobre-nosotros {
     transition: .7s ease-in-out all;
 }
 
-.imgMV--animation {
+.imgM--animation {
     opacity: 0;
     transform: translateX(100px);
     transition: .7s ease-in-out all;
 }
 
-.imgMV--animation.visible {
+.imgM--animation.visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: .7s ease-in-out all;
+}
+
+.imgV--animation {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: .7s ease-in-out all;
+}
+
+.imgV--animation.visible {
     opacity: 1;
     transform: translateX(0);
     transition: .7s ease-in-out all;
@@ -535,7 +547,7 @@ main .sobre-nosotros {
 
 .imgP--animation {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(100px);
     transition: .7s ease-in-out all;
 }
 

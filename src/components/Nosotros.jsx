@@ -4,8 +4,9 @@ import Signo from "../components/Signo.jsx";
 
 export default function Nosotros() {
   const [titulosRef, isIntersecting] = useIntersection({threshold: 0.7});
-  const [imgMVRef, isIntersecting2] = useIntersection({threshold: 0.5});
-  const [imgPRef, isIntersecting3] = useIntersection({threshold: 0.5});
+  const [imgMRef, isIntersecting2] = useIntersection({threshold: 0.5});
+  const [imgVRef, isIntersecting3] = useIntersection({threshold: 0.5});
+  const [imgPRef, isIntersecting4] = useIntersection({threshold: 0.5});
 
   const handleVisibility = (entry) => entry && "visible";
 
@@ -30,10 +31,10 @@ export default function Nosotros() {
                 <p>{Misión.contenido}</p>
               </div>
               <img
-                ref={imgMVRef}
-                src={imagenes.misionVision.src}
-                alt={imagenes.misionVision.alt}
-                className={`imagen-mision-vision imgMV--animation ${handleVisibility(
+                ref={imgMRef}
+                src={imagenes.mision.src}
+                alt={imagenes.mision.alt}
+                className={`imgM--animation ${handleVisibility(
                   isIntersecting2,
                 )}`}
               />
@@ -45,12 +46,12 @@ export default function Nosotros() {
                 <p>{Visión.contenido}</p>
               </div>
               <img
-                ref={imgPRef}
-                className={`imgP--animation ${handleVisibility(
+                ref={imgVRef}
+                className={`imgV--animation ${handleVisibility(
                   isIntersecting3,
                 )}`}
-                src={imagenes.Propuesta.src}
-                alt={imagenes.Propuesta.alt}
+                src={imagenes.vision.src}
+                alt={imagenes.vision.alt}
               />
             </div>
             <div className='contenedor-propuesta'>
@@ -61,10 +62,10 @@ export default function Nosotros() {
               <img
                 ref={imgPRef}
                 className={`imgP--animation ${handleVisibility(
-                  isIntersecting3,
+                  isIntersecting4,
                 )}`}
-                src={imagenes.img1.src}
-                alt={imagenes.img1.alt}
+                src={imagenes.propuesta.src}
+                alt={imagenes.propuesta.alt}
               />
             </div>
           </div>
