@@ -4,7 +4,7 @@ export default function Footer() {
   const {contacto} = data;
   const {contenido, titulo} = contacto;
   return (
-    <footer id='contacto'>
+    <footer>
       <div className='contenedor-footer'>
         <a href='https://linktr.ee/PublicGraphic' target='_blank'>
           {titulo}

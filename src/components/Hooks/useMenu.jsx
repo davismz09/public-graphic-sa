@@ -14,7 +14,7 @@ const useMenu = () => {
   };
 
   const handleClick = (sectionId) => {
-    event.preventDefault(); // Evita que el enlace se siga
+    closeMenuOnClick();
     navigate(sectionId);
   };
 

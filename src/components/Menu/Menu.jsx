@@ -24,7 +24,7 @@ export default function Menu({menu, handleClick, isMenuOpen}) {
       className={`menu ${scrolling ? "scroll" : ""} ${
         isMenuOpen ? "active" : ""
       }`}>
-      <a href='#inicio' onClick={(e) => handleClick("", e)}>
+      <a href='' onClick={(e) => handleClick("", e)}>
         {menu.inicio}
       </a>
       <a href='#nosotros' onClick={(e) => handleClick("nosotros", e)}>
@@ -32,9 +32,6 @@ export default function Menu({menu, handleClick, isMenuOpen}) {
       </a>
       <a href='#servicios' onClick={(e) => handleClick("servicios", e)}>
         {menu.servicios}
-      </a>
-      <a href='#contacto' onClick={(e) => handleClick("contacto", e)}>
-        {menu.contacto}
       </a>
     </nav>
   );
