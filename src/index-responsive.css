@@ -5,7 +5,6 @@
     }
 
     .header {
-        height: 500px;
         background-size: auto 35%, auto 35%, cover;
         background-position: top left, right bottom, center;
     }

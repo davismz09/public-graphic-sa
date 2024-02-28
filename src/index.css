@@ -93,11 +93,27 @@ nav>a:hover {
 
 /* Header */
 .header {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 700px;
+    z-index: 111;
+    background: rgba(0, 157, 224, 0.649);
+}
+
+.menu.scroll {
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.753);
+    backdrop-filter: blur(5px);
+    transition: 0.7s ease all;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    background: hsl(340, 4%, 27%);
     background-image: url(/Public-Graphic-SA/img/esquineras1.webp), url(/Public-Graphic-SA/img/esquineras2.webp), url(/Public-Graphic-SA/img/fondo_imagen.webp);
     background-size: auto 40%, auto 40%, cover;
     background-repeat: no-repeat;
@@ -129,6 +145,7 @@ nav>a:hover {
     background-color: rgba(0, 0, 0, 0.123);
     backdrop-filter: blur(0.2px);
     -webkit-backdrop-filter: blur(0.2px);
+    transition: 0.7s ease all;
 }
 
 /* About us */

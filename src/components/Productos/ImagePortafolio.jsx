@@ -12,6 +12,11 @@ export default function ImagePortafolio({producto}) {
       </div>
       <div className='textos-galeria'>
         <h3>{producto.titulo}</h3>
+        <ul className='list-galeria'>
+          {producto.lista.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

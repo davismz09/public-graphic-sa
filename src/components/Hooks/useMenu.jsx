@@ -1,6 +1,8 @@
 import {useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 const useMenu = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,28 +13,15 @@ const useMenu = () => {
     setIsMenuOpen(false);
   };
 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({behavior: "smooth"});
-      closeMenuOnClick();
-    } else {
-      console.error(`Section with ID ${sectionId} not found`);
-    }
-  };
-
-  const handleClick = (sectionId, event) => {
+  const handleClick = (sectionId) => {
     event.preventDefault(); // Evita que el enlace se siga
-    setTimeout(() => {
-      scrollToSection(sectionId);
-    }, 100);
+    navigate(sectionId);
   };
 
   return {
     isMenuOpen,
     toggleMenu,
     closeMenuOnClick,
-    scrollToSection,
     handleClick,
   };
 };

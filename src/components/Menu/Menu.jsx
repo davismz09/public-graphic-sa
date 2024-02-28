@@ -24,7 +24,7 @@ export default function Menu({menu, handleClick, isMenuOpen}) {
       className={`menu ${scrolling ? "scroll" : ""} ${
         isMenuOpen ? "active" : ""
       }`}>
-      <a href='#inicio' onClick={(e) => handleClick("inicio", e)}>
+      <a href='#inicio' onClick={(e) => handleClick("", e)}>
         {menu.inicio}
       </a>
       <a href='#nosotros' onClick={(e) => handleClick("nosotros", e)}>

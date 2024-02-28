@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import {useParams, useNavigate} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "../../productos.json";
@@ -9,26 +9,10 @@ import Loader from "../Loader.jsx";
 const ProductoLista = () => {
   const {items} = data;
   const params = useParams();
-  const navigate = useNavigate();
 
   const [imgRef, isIntersecting] = useInterseccion({threshold: 0.5});
   const [loading, setLoading] = useState(true);
   const handleVisibility = (entry) => (loading !== entry ? "visible" : "");
-
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({behavior: "smooth"});
-    }
-  };
-
-  const handleClick = (event) => {
-    navigate("/");
-    event.preventDefault();
-    setTimeout(() => {
-      scrollToSection("servicios");
-    }, 100);
-  };
 
   useEffect(() => {
     setLoading(true);
@@ -55,24 +39,6 @@ const ProductoLista = () => {
 
   return (
     <>
-      <nav
-        style={{
-          width: "max-content",
-          height: "50px",
-          backgroundColor: "rgba(0, 157, 224, 0.649)",
-          position: "fixed",
-          top: "0",
-          right: "0",
-          zIndex: 1000,
-          boxShadow: "0 0 5px 0 rgba(0, 0, 0, 0.1)",
-          padding: "0 10px",
-          cursor: "pointer",
-        }}
-        onClick={(e) => handleClick(e)}>
-        <a style={{margin: "0 5px"}} href='#inicio'>
-          inicio
-        </a>
-      </nav>
       <main className='portafolio_container'>
         {items.map((item) => {
           if (item.id === parseInt(params.id)) {
