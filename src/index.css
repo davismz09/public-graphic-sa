@@ -30,7 +30,7 @@ nav {
     padding: 10px 30px;
 }
 
-nav .botonesNav>a {
+nav>a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
@@ -39,7 +39,7 @@ nav .botonesNav>a {
     cursor: pointer;
 }
 
-nav .botonesNav>a:hover {
+nav>a:hover {
     color: rgba(255, 255, 255, 0.849);
 }
 
@@ -93,6 +93,20 @@ nav .botonesNav>a:hover {
     background-repeat: no-repeat, no-repeat;
 }
 
+/* Header */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background: rgba(220, 17, 129, 0.801);
+    transition: 0.7s ease all;
+    padding-left: 30px;
+}
+
 .hero {
     max-width: 100%;
     display: flex;
@@ -118,7 +132,6 @@ nav .botonesNav>a:hover {
 }
 
 .contenido-hero .textos-hero .titulo-hero {
-    font-size: 30px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -158,17 +171,14 @@ nav .botonesNav>a:hover {
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
     gap: 60px;
     padding-right: 60px;
-    background: rgba(220, 17, 129, 0.801);
-    backdrop-filter: blur(0.2px);
-    -webkit-backdrop-filter: blur(0.2px);
     transition: 0.7s ease all;
 }
 
-.menu .botonesNav {
+.menu {
     display: flex;
     gap: 60px;
 
@@ -440,7 +450,6 @@ main .sobre-nosotros {
     height: 100%;
     flex-direction: column;
     position: relative;
-    z-index: 1;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -465,6 +474,7 @@ main .sobre-nosotros {
     cursor: pointer;
     border-radius: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
     transition: background-color 0.3s;
 }
 
@@ -579,7 +589,7 @@ main .sobre-nosotros {
 
 /* Estilos para el carrusel */
 .carousel-container .fullscreen-carousel {
-    width: 85%;
+    width: 100%;
 }
 
 .fullscreen-carousel .carousel .carousel-image-container {

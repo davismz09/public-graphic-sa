@@ -1,6 +1,8 @@
+import {useNavigate} from "react-router-dom";
 import "./Error404.css";
 
 const Error404Page = () => {
+  const navigate = useNavigate();
   return (
     <div className='error-404-page'>
       <div className='error-container'>
@@ -13,7 +15,7 @@ const Error404Page = () => {
         </p>
         <h2>404</h2>
 
-        <a href='/' className='home-link'>
+        <a href='' onClick={navigate("/")} className='home-link'>
           Volver a la página de inicio
         </a>
       </div>
