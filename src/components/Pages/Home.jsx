@@ -1,8 +1,8 @@
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {motion} from "framer-motion";
-import data from "./productosdest.json";
-import ImagePortafolio from "./components/Productos/ImagePortafolio.jsx";
+import data from "../../productosdest.json";
+import ImagePortafolio from "../Productos/ImagePortafolio.jsx";
 
 const Home = () => {
   const {items} = data;

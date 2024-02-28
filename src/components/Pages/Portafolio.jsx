@@ -1,4 +1,4 @@
-import ImagePortafolio from "./ImagePortafolio.jsx";
+import ImagePortafolio from "../Productos/ImagePortafolio.jsx";
 import data from "../../productos.json";
 
 const Portafolio = ({title}) => {

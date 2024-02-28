@@ -1,4 +1,4 @@
-import data from "../textos.json";
+import data from "../../textos.json";
 
 export default function Contacto() {
   const {contacto} = data;

@@ -1,6 +1,6 @@
-import {nosotros} from "../textos.json";
-import useIntersection from "./Hooks/useInterseccion.jsx";
-import Signo from "../components/Signo.jsx";
+import {nosotros} from "../../textos.json";
+import useIntersection from "../Hooks/useInterseccion.jsx";
+import Signo from "../Signo.jsx";
 
 export default function Nosotros() {
   const [titulosRef, isIntersecting] = useIntersection({threshold: 0.7});

@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
-import Menu from "./Menu/Menu";
-import data from "../textos.json";
-import Button from "./Menu/Button.jsx";
-import Capa from "./Menu/Capa.jsx";
-import useMenu from "./Hooks/useMenu";
+import Menu from "../Menu/Menu";
+import data from "../../textos.json";
+import Button from "../Menu/Button.jsx";
+import Capa from "../Menu/Capa.jsx";
+import useMenu from "../Hooks/useMenu";
 
 export default function Header() {
   const {menu} = data;
