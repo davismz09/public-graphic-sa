@@ -223,26 +223,26 @@
         width: 80%;
     }
 
-    /* Footer */
+    /* contacto */
 
     .titulo-final {
         font-size: 20px;
     }
 
-    footer img {
+    .contacto img {
         width: 200px;
         height: 250px;
     }
 
-    .contenedor-footer a {
+    .contenedor-contacto a {
         font-size: 16px;
     }
 
-    footer {
+    .contacto {
         height: 270px;
     }
 
-    footer::before {
+    .contacto::before {
         width: 200px;
         height: 250px;
     }
