@@ -1,6 +1,5 @@
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {motion} from "framer-motion";
 import data from "../../productosdest.json";
 import ImagePortafolio from "../Productos/ImagePortafolio.jsx";
 
@@ -22,13 +21,7 @@ const Home = () => {
           className='fullscreen-carousel'>
           {images.map((image, index) => (
             <div key={index} className='carousel-image-container'>
-              <motion.img
-                src={image}
-                alt={`hero${index + 1}`}
-                className='carousel-image'
-                initial={{opacity: 0, scale: 0.8}}
-                animate={{opacity: 1, scale: 1, transition: {duration: 0.5}}}
-              />
+              <img src={image} alt='imagen' className='carousel-image' />
             </div>
           ))}
         </Carousel>
