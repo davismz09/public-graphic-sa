@@ -604,38 +604,27 @@ main .sobre-nosotros {
 }
 
 /****************************************************/
-
-
-/* Estilos para el carrusel específico */
+/* Estilos para el carrusel swiper específico */
 .carousel-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
-/* Estilos para el carrusel */
-.carousel-container .fullscreen-carousel {
+.swiper_container {
     width: 100%;
+    padding: 1rem 1.5rem;
+    position: relative;
 }
 
-.fullscreen-carousel .carousel .carousel-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.swiper-slide {
     width: 100%;
-    height: 100%;
+    position: relative;
 }
 
-.fullscreen-carousel .carousel .carousel-image {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
-.fullscreen-carousel .control-dots .dot {
-    width: 20px;
-    height: 20px;
+.swiper-slide img {
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
 }
