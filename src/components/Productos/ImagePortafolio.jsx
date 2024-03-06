@@ -3,7 +3,13 @@ import {useNavigate} from "react-router-dom";
 const ImagePortafolio = ({producto, baseRoute}) => {
   const navigate = useNavigate();
 
-  const handleClick = () => navigate(`${baseRoute}/${producto.id}`);
+  const handleClick = () => {
+    navigate(`${baseRoute}/${producto.id}`);
+    // Programar el desplazamiento al inicio de la página
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0); // Un retraso de 0 ms significa que se ejecuta lo antes posible en el próximo ciclo del event loop
+  };
 
   return (
     <div className='container-imagen-port' onClick={handleClick}>
