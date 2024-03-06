@@ -1,4 +1,3 @@
-import {useEffect, useState} from "react";
 import Menu from "../Menu/Menu";
 import data from "../../textos.json";
 import Button from "../Menu/Button.jsx";
@@ -7,26 +6,11 @@ import useMenu from "../Hooks/useMenu";
 
 export default function Header() {
   const {menu} = data;
-  const {isMenuOpen, toggleMenu, closeMenuOnClick, handleClick} = useMenu();
-  const [scrolling, setScrolling] = useState(false);
+  const {isMenuOpen, toggleMenu, closeMenuOnClick, handleClick, scrolling} =
+    useMenu();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
-    <header id='inicio' className={`header ${scrolling ? "scroll" : ""}`}>
+    <header className={`header ${scrolling ? "scroll" : ""}`}>
       <Capa isMenuOpen={isMenuOpen} closeMenuOnClick={closeMenuOnClick} />
       <Button
         isMenuOpen={isMenuOpen}
