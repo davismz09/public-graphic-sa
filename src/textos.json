@@ -6,7 +6,7 @@
     "contacto": "Contacto",
     "trabajo": "Trabajo",
     "img": {
-      "src": "/Public-Graphic-SA/img/logo_inicio.webp",
+      "src": "/Public-Graphic-SA/img/logo-inicio.webp",
       "alt": "Logo de la página"
     }
   },
@@ -26,15 +26,15 @@
     },
     "imagenes": {
       "mision": {
-        "src": "/Public-Graphic-SA/img/quienesomos1.webp",
+        "src": "/Public-Graphic-SA/img/quienes-somos-1.webp",
         "alt": "Misión"
       },
       "vision": {
-        "src": "/Public-Graphic-SA/img/quienesomos2.webp",
+        "src": "/Public-Graphic-SA/img/quienes-somos-2.webp",
         "alt": "Visión"
       },
       "propuesta": {
-        "src": "/Public-Graphic-SA/img/nosotros_final.webp",
+        "src": "/Public-Graphic-SA/img/quienes-somos-3.webp",
         "alt": "Propuesta de valor"
       }
     }

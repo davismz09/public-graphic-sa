@@ -1,11 +1,11 @@
 import {HashRouter, Route, Routes} from "react-router-dom";
-import ProductoLista from "./components/Productos/ProductoLista.jsx";
-import Nosotros from "./components/Pages/Nosotros.jsx";
-import Portafolio from "./components/Pages/Portafolio";
-import Home from "./components/Pages/Home.jsx";
-import Header from "./components/Pages/Header.jsx";
-import Error404Page from "./components/Pages/Error404.jsx";
-import Contacto from "./components/Pages/Contacto.jsx";
+import ProductoLista from "./components/productos/producto-lista.jsx";
+import Nosotros from "./components/pages/nosotros.jsx";
+import Portafolio from "./components/pages/portafolio.jsx";
+import Home from "./components/pages/home.jsx";
+import Header from "./components/pages/header.jsx";
+import Error404Page from "./components/pages/error-404.jsx";
+import Contacto from "./components/pages/contacto.jsx";
 
 export default function App() {
   return (

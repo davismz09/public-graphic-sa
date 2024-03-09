@@ -5,10 +5,9 @@ const ImagePortafolio = ({producto, baseRoute}) => {
 
   const handleClick = () => {
     navigate(`${baseRoute}/${producto.id}`);
-    // Programar el desplazamiento al inicio de la página
     setTimeout(() => {
       window.scrollTo(0, 0);
-    }, 0); // Un retraso de 0 ms significa que se ejecuta lo antes posible en el próximo ciclo del event loop
+    }, 0);
   };
 
   return (

@@ -3,8 +3,8 @@ import {useParams} from "react-router-dom";
 import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import data from "../../productos.json";
-import Loader from "../Loader.jsx";
-import useIntersection from "../Hooks/useInterseccion.jsx";
+import Loader from "../loader.jsx";
+import useIntersection from "../hooks/use-interseccion.jsx";
 
 const ProductoLista = () => {
   const {items} = data;

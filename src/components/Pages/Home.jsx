@@ -1,13 +1,13 @@
-import data from "../../productosdest.json";
-import CustomSwiper from "../CustomSwiper.jsx";
-import ImagePortafolio from "../Productos/ImagePortafolio.jsx";
+import data from "../../productos-destacados.json";
+import CustomSwiper from "../custom-swiper.jsx";
+import ImagePortafolio from "../productos/imagen-portafolio.jsx";
 
 const Home = () => {
   const {items} = data;
   const images = [
-    "img/fondo_imagen.webp",
-    "img/fondo_imagen.webp",
-    "img/fondo_imagen.webp",
+    "img/fondo-imagen.webp",
+    "img/fondo-imagen.webp",
+    "img/fondo-imagen.webp",
   ];
 
   return (

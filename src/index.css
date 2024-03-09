@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Nexa';
-    src: url("/Public-Graphic-SA/fonts/NEXA_LIGHT.OTF") format('.OTF');
+    src: url("/Public-Graphic-SA/fonts/nexa-light.OTF") format('.OTF');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Nexa';
-    src: url('/Public-Graphic-SA/fonts/NEXA_BOLD.OTF') format('.OTF');
+    src: url('/Public-Graphic-SA/fonts/nexa-bold.OTF') format('.OTF');
     font-weight: bold;
     font-style: normal;
 }
@@ -88,7 +88,7 @@ nav>a:hover {
 .portafolio,
 .portafolio_container,
 .sobre-nosotros {
-    background-image: url(/Public-Graphic-SA/img/esquineras1.webp), url(/Public-Graphic-SA/img/esquineras2.webp);
+    background-image: url(/Public-Graphic-SA/img/esquinera-1.webp), url(/Public-Graphic-SA/img/esquinera-2.webp);
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
 }

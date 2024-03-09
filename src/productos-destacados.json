@@ -8,20 +8,20 @@
     },
     {
       "id": 2,
-      "imagen": "/Public-Graphic-SA/img/material_pop-01.webp",
+      "imagen": "/Public-Graphic-SA/img/material-pop-01.webp",
       "titulo": "Boligrafos",
       "codigo": "POP-0001"
     },
     {
       "id": 3,
       "imagen": "/Public-Graphic-SA/img/branding-02.webp",
-      "titulo": "Etiquetas",
+      "titulo": "Etiquetas Parcial",
       "codigo": "BRAND-0002"
     },
     {
-      "id": 5,
-      "imagen": "/Public-Graphic-SA/img/material_pop-05.webp",
-      "titulo": "Papelería",
+      "id": 2,
+      "imagen": "/Public-Graphic-SA/img/material-pop-05.webp",
+      "titulo": "Jarros y termos",
       "codigo": "POP-0005"
     }
   ]

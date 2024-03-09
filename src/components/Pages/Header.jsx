@@ -1,8 +1,8 @@
-import Menu from "../Menu/Menu";
+import Menu from "../menu/menu.jsx";
 import data from "../../textos.json";
-import Button from "../Menu/Button.jsx";
-import Capa from "../Menu/Capa.jsx";
-import useMenu from "../Hooks/useMenu";
+import Button from "../menu/button.jsx";
+import Capa from "../menu/capa.jsx";
+import useMenu from "../hooks/use-menu.jsx";
 
 export default function Header() {
   const {menu} = data;

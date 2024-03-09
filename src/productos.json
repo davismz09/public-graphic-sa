@@ -7,22 +7,22 @@
       "lista": ["Lineas", "Bamboo", "Ecología", "Corcho", "Kraft"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/lineas_promocionales_01.webp",
+          "url": "/Public-Graphic-SA/img/lineas-promocionales-01.webp",
           "alt": "Promocionales 1",
           "codigo": "PROM-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/lineas_promocionales_02.webp",
+          "url": "/Public-Graphic-SA/img/lineas-promocionales-02.webp",
           "alt": "Promocionales 2",
           "codigo": "PROM-0002"
         },
         "imagen3": {
-          "url": "/Public-Graphic-SA/img/lineas_promocionales_03.webp",
+          "url": "/Public-Graphic-SA/img/lineas-promocionales-03.webp",
           "alt": "Promocionales 3",
           "codigo": "PROM-0003"
         },
         "imagen4": {
-          "url": "/Public-Graphic-SA/img/lineas_promocionales_04.webp",
+          "url": "/Public-Graphic-SA/img/lineas-promocionales-04.webp",
           "alt": "Promocionales 4",
           "codigo": "PROM-0004"
         }
@@ -35,27 +35,27 @@
       "lista": ["Agendas", "Boligrafos", "Termos", "Camisas", "Jarros"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/material_pop-01.webp",
+          "url": "/Public-Graphic-SA/img/material-pop-01.webp",
           "alt": "Material p.o.p 1",
           "codigo": "POP-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/material_pop-02.webp",
+          "url": "/Public-Graphic-SA/img/material-pop-02.webp",
           "alt": "Material p.o.p 2",
           "codigo": "POP-0002"
         },
         "imagen3": {
-          "url": "/Public-Graphic-SA/img/material_pop-03.webp",
+          "url": "/Public-Graphic-SA/img/material-pop-03.webp",
           "alt": "Material p.o.p 3",
           "codigo": "POP-0003"
         },
         "imagen4": {
-          "url": "/Public-Graphic-SA/img/material_pop-04.webp",
+          "url": "/Public-Graphic-SA/img/material-pop-04.webp",
           "alt": "Material p.o.p 4",
           "codigo": "POP-0004"
         },
         "imagen5": {
-          "url": "/Public-Graphic-SA/img/material_pop-05.webp",
+          "url": "/Public-Graphic-SA/img/material-pop-05.webp",
           "alt": "Material p.o.p 5",
           "codigo": "POP-0005"
         }
