@@ -1,13 +1,13 @@
 import {useNavigate} from "react-router-dom";
+import useMenu from "../hooks/use-menu.jsx";
 
 const ImagePortafolio = ({producto, baseRoute}) => {
   const navigate = useNavigate();
+  const {handleTimeout} = useMenu();
 
   const handleClick = () => {
     navigate(`${baseRoute}/${producto.id}`);
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
+    handleTimeout();
   };
 
   return (
