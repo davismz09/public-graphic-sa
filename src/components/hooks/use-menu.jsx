@@ -22,8 +22,7 @@ const useMenu = () => {
 
   const closeMenuOnClick = () => setIsMenuOpen(false);
 
-  const handleClick = () => {
-    closeMenuOnClick();
+  const handleTimeout = () => {
     setTimeout(() => {
       window.scrollTo(0, 0);
       // Desplazamiento: Ubica al usuario al inicio de la página
@@ -31,11 +30,17 @@ const useMenu = () => {
     // Tiempo: retraso de 0s para hacerlo automaticamente
   };
 
+  const handleClick = () => {
+    closeMenuOnClick();
+    handleTimeout();
+  };
+
   return {
     isMenuOpen,
     toggleMenu,
     closeMenuOnClick,
     handleClick,
+    handleTimeout,
     scrolling,
   };
 };
