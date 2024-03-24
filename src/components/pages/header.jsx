@@ -19,7 +19,7 @@ export default function Header() {
       />
       <div className='container-header-image'>
         <img
-          onClick={(e) => handleClick("", e)}
+          onClick={() => handleClick()}
           style={{height: "55px"}}
           src={menu.img.src}
           alt='Logo Public Graphic'
