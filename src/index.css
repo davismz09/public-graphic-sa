@@ -422,7 +422,7 @@ main .sobre-nosotros {
 /* contacto */
 .contacto {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     margin: auto;
     position: relative;
     display: flex;
@@ -625,6 +625,7 @@ main .sobre-nosotros {
 
 .swiper-slide img {
     width: 100%;
+    height: 500px;
     border-radius: .5rem;
     object-fit: cover;
 }
