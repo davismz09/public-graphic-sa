@@ -12,9 +12,7 @@ const Home = () => {
 
   return (
     <section className='hero' id='inicio'>
-      <div className='carousel-container'>
-        <CustomSwiper images={images} effect='creative' />
-      </div>
+      <CustomSwiper images={images} effect='creative' />
       <div className='contenido-hero'>
         <div className='textos-hero'>
           <div className='titulo-lineas-container'>
