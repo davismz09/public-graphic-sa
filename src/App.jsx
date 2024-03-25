@@ -6,6 +6,7 @@ import Home from "./components/pages/home.jsx";
 import Header from "./components/pages/header.jsx";
 import Error404Page from "./components/pages/error-404.jsx";
 import Contacto from "./components/pages/contacto.jsx";
+import Producto from "./components/productos/producto.jsx";
 
 export default function App() {
   return (
@@ -17,6 +18,10 @@ export default function App() {
           <Route path='/nosotros' element={<Nosotros />} />
           <Route path='/productos' element={<Portafolio />} />
           <Route path='/productos/:id' element={<ProductoLista />} />
+          <Route
+            path='/productos/comprar/:id/:producto'
+            element={<Producto />}
+          />
           <Route path='contactos' element={<Contacto />} />
           <Route path='*' element={<Error404Page />} />
         </Routes>
