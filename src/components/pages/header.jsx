@@ -6,11 +6,10 @@ import useMenu from "../hooks/use-menu.jsx";
 
 export default function Header() {
   const {menu} = data;
-  const {isMenuOpen, toggleMenu, closeMenuOnClick, handleClick, scrolling} =
-    useMenu();
+  const {isMenuOpen, toggleMenu, closeMenuOnClick, handleClick} = useMenu();
 
   return (
-    <header className={`header ${scrolling ? "scroll" : ""}`}>
+    <header className={`header`}>
       <Capa isMenuOpen={isMenuOpen} closeMenuOnClick={closeMenuOnClick} />
       <Button
         isMenuOpen={isMenuOpen}
