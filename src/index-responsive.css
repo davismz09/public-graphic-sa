@@ -124,16 +124,20 @@
         align-items: center;
     }
 
-    .contenedor-mision,
-    .contenedor-vision,
     .contenedor-propuesta {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .contenedor-vision>*,
+    .contenedor-mision>*,
+    .contenedor-propuesta>* {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .contenedor-sobre-nosotros img {
-        width: 95%;
+        width: 50%;
     }
 
     .contenedor-contacto {
@@ -210,6 +214,13 @@
         width: 95%;
     }
 
+    .contenedor-vision,
+    .contenedor-mision,
+    .contenedor-propuesta {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .sobre-nosotros img {
         width: 95%;
     }
@@ -246,15 +257,6 @@
 }
 
 @media screen and (min-width: 900px) {
-    .header.scroll {
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: rgba(187, 44, 123, 0.897);
-        backdrop-filter: blur(5px);
-        transition: 0.7s ease all;
-    }
-
     .contenedor-sobre-nosotros img {
         width: 50%;
     }
