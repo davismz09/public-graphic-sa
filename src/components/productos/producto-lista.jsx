@@ -1,17 +1,23 @@
 import {useState, useEffect} from "react";
-import {useParams} from "react-router-dom";
-import {Carousel} from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {useParams, useNavigate} from "react-router-dom";
 import data from "../../productos.json";
 import Loader from "../loader.jsx";
 import useIntersection from "../hooks/use-interseccion.jsx";
+import useMenu from "../hooks/use-menu.jsx";
 
 const ProductoLista = () => {
   const {items} = data;
   const params = useParams();
-  const [imgRef, isIntersecting] = useIntersection();
+  const navigate = useNavigate();
+  const {handleTimeout} = useMenu();
+  const [imgRef] = useIntersection();
   const [loading, setLoading] = useState(true);
   const currentItem = items.find((item) => item.id === parseInt(params.id));
+
+  const handleClick = (base, codigo) => {
+    navigate(`/productos/comprar/${base}/${codigo}`);
+    handleTimeout();
+  };
 
   useEffect(() => {
     setLoading(true);
@@ -35,41 +41,34 @@ const ProductoLista = () => {
   }, [params.id, currentItem]);
 
   return (
-    <main className='portafolio_container'>
-      <section className='portafolio_producto' key={currentItem?.id}>
+    <section className='portafolio_producto' key={currentItem?.id}>
+      <div className='contenedor'>
         <h2 ref={imgRef.current} className='titulo-servicios'>
           {currentItem?.titulo}
         </h2>
         {loading ? (
           <Loader />
         ) : currentItem?.carrusel ? (
-          <Carousel
-            autoPlay
-            infiniteLoop
-            showArrows
-            interval={1500}
-            showStatus={false}
-            showThumbs={false}
-            className={`imagen-port--animation ${
-              isIntersecting ? "visible" : ""
-            }`}>
-            {Object.values(currentItem.carrusel).map((imagen) => (
-              <div key={imagen.codigo}>
-                <h3>Código: {imagen.codigo}</h3>
-                <img src={imagen.url} alt={imagen.alt} />
+          <div className='galeria-port'>
+            {Object.values(currentItem.carrusel).map((imagen, index) => (
+              <div
+                key={index}
+                className={`imagen-port`}
+                onClick={() => handleClick(currentItem?.id, imagen.codigo)}>
+                <h2 style={{textAlign: "center", padding: "15px 0"}}>
+                  {imagen.codigo}
+                </h2>
+                <img src={imagen.url} alt={imagen.codigo} />
               </div>
             ))}
-          </Carousel>
+          </div>
         ) : (
-          <div
-            className={`imagen-port imagen-port--animation ${
-              isIntersecting ? "visible" : ""
-            }`}>
+          <div className={`imagen-port`}>
             <img src={currentItem.imagen} alt={currentItem.titulo} />
           </div>
         )}
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 
