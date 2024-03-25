@@ -140,6 +140,10 @@
         width: 50%;
     }
 
+    .contenedor_producto {
+        width: 65%;
+    }
+
     .contenedor-contacto {
         flex-direction: column;
         justify-content: center;
@@ -163,8 +167,15 @@
         font-size: 40px;
     }
 
-    .titulos {
-        justify-content: center;
+    .contenedor-vision,
+    .contenedor-mision,
+    .contenedor-propuesta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-sobre-nosotros img {
+        width: 80%;
     }
 
     .signo {
@@ -173,17 +184,27 @@
     }
 
     .portafolio,
-    .portafolio_container,
+    .portafolio_producto,
+    .producto_individual,
     .sobre-nosotros {
         background-size: 40%, 40%;
+    }
+
+    .producto_individual {
+        padding: 100px 0;
+    }
+
+    .contenedor_producto {
+        width: 70%;
+        grid-template-columns: 1fr;
     }
 
     .imagen-port {
         width: 55%;
     }
 
-    .portafolio_container {
-        padding: 120px 0;
+    .portafolio_producto {
+        padding: 100px 0;
     }
 }
 
@@ -191,6 +212,10 @@
 @media screen and (max-width: 500px) {
     .logo_inicio {
         width: 200px;
+    }
+
+    .titulos {
+        justify-content: center;
     }
 
     .textos-header h1 {
@@ -214,19 +239,13 @@
         width: 95%;
     }
 
-    .contenedor-vision,
-    .contenedor-mision,
-    .contenedor-propuesta {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .sobre-nosotros img {
         width: 95%;
     }
 
     .portafolio,
-    .portafolio_container,
+    .portafolio_producto,
+    .producto_individual,
     .sobre-nosotros {
         background-size: 60%, 60%;
     }
@@ -278,13 +297,14 @@
     }
 
     .portafolio,
-    .portafolio_container,
+    .portafolio_producto,
+    .producto_individual,
     .sobre-nosotros {
         background-size: 25%, 25%;
     }
 
-    .portafolio_container {
-        padding: 50px 0;
+    .portafolio_producto {
+        padding-top: 50px;
     }
 
     .imagen-port {

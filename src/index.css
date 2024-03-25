@@ -84,7 +84,8 @@ nav>a:hover {
 
 /*Esquineras*/
 .portafolio,
-.portafolio_container,
+.portafolio_producto,
+.producto_individual,
 .sobre-nosotros {
     background-image: url(/Public-Graphic-SA/img/esquinera-1.webp), url(/Public-Graphic-SA/img/esquinera-2.webp);
     background-position: top left, bottom right;
@@ -111,6 +112,11 @@ nav>a:hover {
     padding: 0 10px;
     height: 100%;
     background-color: #fff;
+}
+
+.header .container-header-image img {
+    width: 100%;
+    height: 55px;
 }
 
 .hero {
@@ -295,42 +301,14 @@ main .sobre-nosotros {
 
 /* Portfolio */
 /* Estilos para las flechas de navegación */
-.portafolio_container .carousel.carousel-slider .control-arrow {
-    width: 40px;
-    height: 40px;
-    color: #006994;
-    background-color: rgba(0, 157, 224, 0.5);
-    font-size: 24px;
-    opacity: 1;
-    transition: opacity 0.3s;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.portafolio_container .carousel.carousel-slider {
-    border-radius: 15px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    padding: 10px;
-}
-
-
 .portafolio {
     position: relative;
     padding: 60px 0;
 }
 
-.portafolio_container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .portafolio_producto {
     width: 100%;
+    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -338,6 +316,124 @@ main .sobre-nosotros {
     flex-wrap: wrap;
     gap: 15px;
 }
+
+/* produdcto individal*/
+.producto_individual {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.producto_individual h1 {
+    font-size: 32px;
+}
+
+.contenedor_producto {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff5b;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.producto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.producto h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.producto h3 {
+    font-size: 20px;
+    color: #555;
+}
+
+.producto .galeria-port {
+    width: 70%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.producto .galeria-port img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.4s ease transform;
+    cursor: pointer;
+}
+
+.producto:hover .galeria-port img {
+    transform: scale(1.3);
+}
+
+.contacto_whatsapp {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contacto_whatsapp h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contacto_whatsapp p {
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacto_whatsapp button {
+    background-color: #075e54;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto_whatsapp button:hover {
+    background-color: #128c7e;
+}
+
+.contacto_whatsapp button a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*fin de producto individual*/
 
 .seccion-servicios {
     display: flex;
@@ -352,6 +448,7 @@ main .sobre-nosotros {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     gap: 30px;
     padding: 30px 0;
@@ -365,6 +462,7 @@ main .sobre-nosotros {
     position: relative;
     cursor: pointer;
     border-radius: 15px;
+    text-transform: uppercase;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
 }
 
@@ -563,24 +661,6 @@ main .sobre-nosotros {
 }
 
 /****************************************************/
-
-/* Sección Productos */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.imagen-port--animation.visible {
-    animation: fadeIn 0.8s ease-in-out;
-}
-
 /* Estilos del loader */
 .loader-container {
     display: flex;
