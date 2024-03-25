@@ -13,7 +13,11 @@ const ImagePortafolio = ({producto, baseRoute}) => {
   return (
     <div className='container-imagen-port' onClick={handleClick}>
       <div className='imagen-port'>
-        <img src={producto.imagen} alt={producto.titulo} />
+        <img
+          src={producto.imagen}
+          alt={producto.titulo}
+          title={producto.titulo}
+        />
       </div>
       <div className='textos-galeria'>
         <h3>{producto.titulo}</h3>

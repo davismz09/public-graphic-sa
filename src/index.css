@@ -186,21 +186,7 @@ nav>a:hover {
     justify-content: end;
     align-items: center;
     gap: 60px;
-    transition: 0.7s ease all;
-}
-
-.menu {
-    display: flex;
-    gap: 60px;
-
-}
-
-.logo_inicio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
+    transition: 0.7s ease left;
 }
 
 /* About us */
@@ -272,22 +258,9 @@ main .sobre-nosotros {
     flex-direction: row;
 }
 
-.contenido-textos h3 {
+.contenido-textos h2 {
     color: rgb(227, 0, 126);
     font-size: 28px;
-}
-
-.contenido-textos h3>span {
-    background: rgb(227, 0, 126);
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-    margin-right: 5px;
 }
 
 .contenido-textos p {

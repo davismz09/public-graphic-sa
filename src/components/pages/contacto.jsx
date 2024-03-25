@@ -6,7 +6,10 @@ export default function Contacto() {
   return (
     <section className='contacto' id='contactos'>
       <div className='contenedor-contacto'>
-        <a href='https://linktr.ee/PublicGraphic' target='_blank'>
+        <a
+          href='https://linktr.ee/PublicGraphic'
+          target='_blank'
+          title='Enlace redes sociales | PublicGraphic'>
           {titulo}
         </a>
         <h2 className='titulo-final'>{contenido} </h2>

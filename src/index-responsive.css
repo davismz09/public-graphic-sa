@@ -13,10 +13,6 @@
         height: auto;
     }
 
-    .logo_inicio {
-        width: 350px;
-    }
-
     .capa--opacity.active {
         width: 100%;
         top: 100;
@@ -41,29 +37,27 @@
 
     .menu {
         width: 50%;
+        height: 100vh;
+        padding-top: 20px;
         font-size: 14px;
         flex-direction: column;
-        position: fixed;
+        justify-content: start;
         gap: 20px;
+        position: fixed;
         top: 0;
         left: -100%;
+        z-index: 5;
         background: rgba(220, 17, 129);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         cursor: pointer;
         color: #fff;
-        padding: 0;
-        transition: top 0.4s ease;
+        transition: left 0.4s ease-in-out;
     }
 
-
     .menu.active {
-        height: 100vh;
-        left: 0;
-        z-index: 5;
-        justify-content: start;
         padding-top: 20px;
-        transition: top 0.4s ease;
+        left: 0;
     }
 
     .menu a {
@@ -210,10 +204,6 @@
 
 /* Estilos para pantallas de hasta 500px */
 @media screen and (max-width: 500px) {
-    .logo_inicio {
-        width: 200px;
-    }
-
     .titulos {
         justify-content: center;
     }

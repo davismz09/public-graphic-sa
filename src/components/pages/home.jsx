@@ -17,7 +17,7 @@ const Home = () => {
         <div className='textos-hero'>
           <div className='titulo-lineas-container'>
             <div className='linea'></div>
-            <h1 className='titulo-hero'>Productos destacados</h1>
+            <h2 className='titulo-hero'>Productos destacados</h2>
             <div className='linea'></div>
           </div>
         </div>

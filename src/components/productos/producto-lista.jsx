@@ -15,7 +15,7 @@ const ProductoLista = () => {
   const currentItem = items.find((item) => item.id === parseInt(params.id));
 
   const handleClick = (base, codigo) => {
-    navigate(`/productos/comprar/${base}/${codigo}`);
+    navigate(`/productos/${base}/${codigo}`);
     handleTimeout();
   };
 
@@ -58,7 +58,11 @@ const ProductoLista = () => {
                 <h2 style={{textAlign: "center", padding: "15px 0"}}>
                   {imagen.codigo}
                 </h2>
-                <img src={imagen.url} alt={imagen.codigo} />
+                <img
+                  src={imagen.url}
+                  alt={imagen.codigo}
+                  title={imagen.titulo}
+                />
               </div>
             ))}
           </div>

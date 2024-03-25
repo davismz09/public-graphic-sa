@@ -20,7 +20,11 @@ export default function Producto() {
           <h2>{currentImage.titulo}</h2>
           <h3>{currentImage.codigo}</h3>
           <div className='galeria-port'>
-            <img src={currentImage.url} alt={currentImage.codigo} />
+            <img
+              src={currentImage.url}
+              alt={currentImage.codigo}
+              title={currentImage.titulo}
+            />
           </div>
         </div>
         <div className='contacto_whatsapp'>
@@ -30,6 +34,7 @@ export default function Producto() {
           <button>
             <a
               href={`https://api.whatsapp.com/send/?phone=${numero}&text=Hola%2C%20buenos%20días%20me%20podría%20dar%20mas%20información%20sobre%20el%20producto%20${currentImage.titulo}%20con%20código%20${currentImage.codigo},%20por%20favor.`}
+              title='Enlace a WhatsApp'
               target='_blank'
               rel='noopener noreferrer'>
               Whatsapp
