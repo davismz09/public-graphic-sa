@@ -4,6 +4,8 @@ import data from "../../productos.json";
 import Loader from "../loader.jsx";
 import useIntersection from "../hooks/use-interseccion.jsx";
 import useMenu from "../hooks/use-menu.jsx";
+import {CSSTransition} from "react-transition-group";
+import "../../transition.css";
 
 const ProductoLista = () => {
   const {items} = data;
@@ -58,17 +60,34 @@ const ProductoLista = () => {
                 <h2 style={{textAlign: "center", padding: "15px 0"}}>
                   {imagen.codigo}
                 </h2>
-                <img
-                  src={imagen.url}
-                  alt={imagen.codigo}
-                  title={imagen.titulo}
-                />
+                <CSSTransition
+                  in={true}
+                  appear={true}
+                  timeout={500}
+                  classNames='fade'>
+                  <img
+                    decoding='async'
+                    src={imagen.url}
+                    alt={imagen.codigo}
+                    title={imagen.titulo}
+                  />
+                </CSSTransition>
               </div>
             ))}
           </div>
         ) : (
           <div className={`imagen-port`}>
-            <img src={currentItem.imagen} alt={currentItem.titulo} />
+            <CSSTransition
+              in={true}
+              appear={true}
+              timeout={500}
+              classNames='fade'>
+              <img
+                decoding='async'
+                src={currentItem.imagen}
+                alt={currentItem.titulo}
+              />
+            </CSSTransition>
           </div>
         )}
       </div>

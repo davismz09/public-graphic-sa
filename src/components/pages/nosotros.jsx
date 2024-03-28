@@ -31,6 +31,7 @@ export default function Nosotros() {
                 <p>{Misión.contenido}</p>
               </div>
               <img
+                decoding='async'
                 ref={imgMRef}
                 src={imagenes.mision.src}
                 alt={imagenes.mision.alt}
@@ -47,6 +48,7 @@ export default function Nosotros() {
                 <p>{Visión.contenido}</p>
               </div>
               <img
+                decoding='async'
                 ref={imgVRef}
                 className={`imgV--animation ${handleVisibility(
                   isIntersecting3,
@@ -62,6 +64,7 @@ export default function Nosotros() {
                 <p>{Propuesta.contenido}</p>
               </div>
               <img
+                decoding='async'
                 ref={imgPRef}
                 className={`imgP--animation ${handleVisibility(
                   isIntersecting4,

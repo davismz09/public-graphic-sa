@@ -18,6 +18,7 @@ export default function Header() {
       />
       <div className='container-header-image'>
         <img
+          decoding='async'
           onClick={() => handleClick()}
           style={{height: "55px"}}
           src={menu.img.src}

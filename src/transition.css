@@ -1,0 +1,90 @@
+/* Animaciones fade */
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.fade-appear-active,
+.fade-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.fade-exit {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 500ms, transform 500ms;
+}
+
+/*Animaciones slide*/
+/*
+.slide-enter,
+.slide-appear {
+    transform: translateX(-100%);
+}
+
+.slide-enter-active,
+.slide-appear-active {
+    transform: translateX(0);
+    transition: transform 500ms;
+}
+
+.slide-exit {
+    transform: translateX(0);
+}
+
+.slide-exit-active {
+    transform: translateX(-100%);
+    transition: transform 500ms;
+}
+*/
+
+/*Animaciones scale.*/
+
+/* .scale-enter,
+.scale-appear {
+    transform: scale(0);
+}
+
+.scale-enter-active,
+.scale-appear-active {
+    transform: scale(1);
+    transition: transform 500ms;
+}
+
+.scale-exit {
+    transform: scale(1);
+}
+
+.scale-exit-active {
+    transform: scale(0);
+    transition: transform 500ms;
+} */
+
+/*Animaciones Rotate*/
+/* .rotate-enter,
+.rotate-appear {
+    transform: rotate(0deg);
+}
+
+.rotate-enter-active,
+.rotate-appear-active {
+    transform: rotate(360deg);
+    transition: transform 500ms;
+}
+
+.rotate-exit {
+    transform: rotate(360deg);
+}
+
+.rotate-exit-active {
+    transform: rotate(0deg);
+    transition: transform 500ms;
+} */

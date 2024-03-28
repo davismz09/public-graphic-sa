@@ -1,5 +1,7 @@
 import {useParams} from "react-router-dom";
 import data from "../../productos.json";
+import {CSSTransition} from "react-transition-group";
+import "../../transition.css";
 
 export default function Producto() {
   const numero = "#"; //Modificar: ubicacion de variable
@@ -20,11 +22,18 @@ export default function Producto() {
           <h2>{currentImage.titulo}</h2>
           <h3>{currentImage.codigo}</h3>
           <div className='galeria-port'>
-            <img
-              src={currentImage.url}
-              alt={currentImage.codigo}
-              title={currentImage.titulo}
-            />
+            <CSSTransition
+              in={true}
+              appear={true}
+              timeout={500}
+              classNames='fade'>
+              <img
+                decoding='async'
+                src={currentImage.url}
+                alt={currentImage.codigo}
+                title={currentImage.titulo}
+              />
+            </CSSTransition>
           </div>
         </div>
         <div className='contacto_whatsapp'>

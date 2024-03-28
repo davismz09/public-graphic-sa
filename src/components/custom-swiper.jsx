@@ -52,7 +52,7 @@ const CustomSwiper = ({
         className='swiper_container'>
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img src={image} alt={`imagen-${index}`} />
+            <img decoding='async' src={image} alt={`imagen-${index}`} />
           </SwiperSlide>
         ))}
       </Swiper>
