@@ -1,20 +1,26 @@
-@font-face {
-    font-family: 'Nexa';
-    src: url("/Public-Graphic-SA/fonts/nexa-light.OTF") format('.OTF');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nexa';
-    src: url('/Public-Graphic-SA/fonts/nexa-bold.OTF') format('.OTF');
-    font-weight: bold;
-    font-style: normal;
+:root {
+    --color-body: rgba(60, 60, 62, 1);
+    --color-blanco: rgba(255, 255, 255, 1);
+    --color-blanco-hover: rgba(255, 255, 255, 0.849);
+    --color-negro: rgba(0, 0, 0, 1);
+    --color-titulo-2: rgba(100, 42, 115, 1);
+    --color-titulo-3: rgba(51, 51, 51, 1);
+    --color-titulo-4: rgba(85, 85, 85, 1);
+    --color-titulo-span: rgba(0, 156, 224, 1);
+    --color-fondo-encabezado: rgba(220, 17, 129, 0.801);
+    --color-hero: rgba(0, 149, 217, 1);
+    --color-titulo-2: rgba(227, 0, 126, 1);
+    --color-fondo-producto: rgba(255, 255, 255, 0.357);
+    --color-fondo-boton-whatsapp: rgba(7, 94, 84, 1);
+    --color-fondo-boton-whatsapp-hover: rgba(18, 140, 126, 1);
+    --color-fondo-contacto: rgba(241, 76, 232, 1);
+    --color-enlace-contacto: rgba(75, 70, 117, 1);
+    --color-fondo-enlace-contacto-hover: rgba(0, 105, 148, 1);
 }
 
 body {
     font-family: 'Nexa', sans-serif;
-    color: rgb(60, 60, 62);
+    color: var(--color-body);
 }
 
 * {
@@ -31,7 +37,7 @@ nav {
 }
 
 nav>a {
-    color: #fff;
+    color: var(--color-blanco);
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -40,7 +46,7 @@ nav>a {
 }
 
 nav>a:hover {
-    color: rgba(255, 255, 255, 0.849);
+    color: var(--color-blanco-hover);
 }
 
 .contenedor {
@@ -60,24 +66,23 @@ nav>a:hover {
     font-size: 80px;
     text-align: end;
     line-height: .9;
-    color: black;
+    color: var(--color-negro);
     text-transform: uppercase;
     font-weight: normal;
 }
 
 .titulo>span {
     font-weight: 700;
-    color: rgb(0, 156, 224);
+    color: var(--color-titulo-span);
 }
 
 .signo {
     width: 160px;
     height: 160px;
-    color: rgb(227, 0, 126);
 }
 
 .titulo-servicios {
-    color: #642a73;
+    color: var(--color-titulo-2);
     font-size: 30px;
     text-align: center;
 }
@@ -100,7 +105,7 @@ nav>a:hover {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(220, 17, 129, 0.801);
+    background: var(--color-fondo-encabezado);
     transition: 0.7s ease all;
     padding: 0 30px;
 }
@@ -111,7 +116,7 @@ nav>a:hover {
     align-items: center;
     padding: 0 10px;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--color-blanco);
 }
 
 .header .container-header-image img {
@@ -144,7 +149,7 @@ nav>a:hover {
 }
 
 .contenido-hero .textos-hero .titulo-hero {
-    color: #fff;
+    color: var(--color-blanco);
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1.2;
@@ -157,14 +162,14 @@ nav>a:hover {
 }
 
 .titulo-hero {
-    background-color: rgb(0, 149, 217);
+    background-color: var(--color-hero);
     padding: 5px 15px;
 }
 
 .linea {
     height: 4px;
     width: 30%;
-    background-color: rgb(0, 149, 217);
+    background-color: var(--color-hero);
 }
 
 .contenido-hero .galeria-port .container-imagen-port .textos-galeria {
@@ -259,7 +264,7 @@ main .sobre-nosotros {
 }
 
 .contenido-textos h2 {
-    color: rgb(227, 0, 126);
+    color: var(--color-titulo-2);
     font-size: 28px;
 }
 
@@ -312,7 +317,7 @@ main .sobre-nosotros {
     justify-items: center;
     gap: 20px;
     padding: 20px;
-    background-color: #ffffff5b;
+    background-color: var(--color-fondo-producto);
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
@@ -332,12 +337,12 @@ main .sobre-nosotros {
 .producto h2 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: var(--color-titulo-3);
 }
 
 .producto h3 {
     font-size: 20px;
-    color: #555;
+    color: var(--color-titulo-4);
 }
 
 .producto .galeria-port {
@@ -385,7 +390,7 @@ main .sobre-nosotros {
 }
 
 .contacto_whatsapp button {
-    background-color: #075e54;
+    background-color: var(--color-fondo-boton-whatsapp);
     color: #fff;
     font-size: 18px;
     font-weight: bold;
@@ -396,13 +401,13 @@ main .sobre-nosotros {
 }
 
 .contacto_whatsapp button:hover {
-    background-color: #128c7e;
+    background-color: var(--color-fondo-boton-whatsapp-hover);
 }
 
 .contacto_whatsapp button a {
     display: block;
     padding: 10px 20px;
-    color: #fff;
+    color: var(--color-blanco);
     text-decoration: none;
 }
 
@@ -503,7 +508,7 @@ main .sobre-nosotros {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: rgb(241, 76, 232);
+    background: var(--color-fondo-contacto);
     background: linear-gradient(0deg, rgba(241, 76, 232, 1) 13%, rgba(149, 149, 201, 1) 56%, rgba(26, 207, 244, 1) 78%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -552,8 +557,8 @@ main .sobre-nosotros {
     height: max-content;
     white-space: nowrap;
     word-wrap: break-word;
-    background-color: white;
-    color: rgb(75, 70, 117);
+    background-color: var(--color-blanco);
+    color: var(--color-enlace-contacto);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -571,15 +576,15 @@ main .sobre-nosotros {
 }
 
 .contenedor-contacto a:hover {
-    background-color: #006994;
-    color: #fff;
+    background-color: var(--color-fondo-enlace-contacto-hover);
+    color: var(--color-blanco);
 }
 
 .titulo-final {
     text-align: center;
     font-size: 24px;
     margin: 20px 0 0 0;
-    color: white;
+    color: var(--color-blanco);
 }
 
 /* Animaciones para los componentes */
