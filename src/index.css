@@ -93,7 +93,7 @@ nav>a:hover {
 .portafolio_producto,
 .producto_individual,
 .sobre-nosotros {
-    background-image: url(/Public-Graphic-SA/img/esquinera-1.webp), url(/Public-Graphic-SA/img/esquinera-2.webp);
+    background-image: url(/public-graphic-sa/img/esquinera-1.webp), url(/public-graphic-sa/img/esquinera-2.webp);
     background-position: top left, bottom right;
     background-repeat: no-repeat, no-repeat;
 }
@@ -518,7 +518,7 @@ main .sobre-nosotros {
 
 .contacto::before {
     content: "";
-    background-image: url('/Public-Graphic-SA/img/logo.webp');
+    background-image: url('/public-graphic-sa/img/logo.webp');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

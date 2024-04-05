@@ -2,30 +2,30 @@
   "items": [
     {
       "id": 1,
-      "imagen": "/Public-Graphic-SA/img/1.webp",
+      "imagen": "/public-graphic-sa/img/1.webp",
       "titulo": "Promocionales",
       "lista": ["Lineas", "Bamboo", "Ecología", "Corcho", "Kraft"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/lineas-promocionales-01.webp",
+          "url": "/public-graphic-sa/img/lineas-promocionales-01.webp",
           "alt": "Promocionales 1",
           "titulo": "Linea Bambú",
           "codigo": "prom-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/lineas-promocionales-02.webp",
+          "url": "/public-graphic-sa/img/lineas-promocionales-02.webp",
           "alt": "Promocionales 2",
           "titulo": "Linea Ecológica",
           "codigo": "prom-0002"
         },
         "imagen3": {
-          "url": "/Public-Graphic-SA/img/lineas-promocionales-03.webp",
+          "url": "/public-graphic-sa/img/lineas-promocionales-03.webp",
           "alt": "Promocionales 3",
           "titulo": "Linea Corcho",
           "codigo": "prom-0003"
         },
         "imagen4": {
-          "url": "/Public-Graphic-SA/img/lineas-promocionales-04.webp",
+          "url": "/public-graphic-sa/img/lineas-promocionales-04.webp",
           "alt": "Promocionales 4",
           "titulo": "Linea Kraft",
           "codigo": "prom-0004"
@@ -34,36 +34,36 @@
     },
     {
       "id": 2,
-      "imagen": "/Public-Graphic-SA/img/2.webp",
+      "imagen": "/public-graphic-sa/img/2.webp",
       "titulo": "Material p.o.p",
       "lista": ["Agendas", "Boligrafos", "Termos", "Camisas", "Jarros"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/material-pop-01.webp",
+          "url": "/public-graphic-sa/img/material-pop-01.webp",
           "alt": "Material p.o.p 1",
           "titulo": "Lapices",
           "codigo": "pop-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/material-pop-02.webp",
+          "url": "/public-graphic-sa/img/material-pop-02.webp",
           "alt": "Material p.o.p 2",
           "titulo": "Globos - Pop Sockets",
           "codigo": "pop-0002"
         },
         "imagen3": {
-          "url": "/Public-Graphic-SA/img/material-pop-03.webp",
+          "url": "/public-graphic-sa/img/material-pop-03.webp",
           "alt": "Material p.o.p 3",
           "titulo": "Camisas",
           "codigo": "pop-0003"
         },
         "imagen4": {
-          "url": "/Public-Graphic-SA/img/material-pop-04.webp",
+          "url": "/public-graphic-sa/img/material-pop-04.webp",
           "alt": "Material p.o.p 4",
           "titulo": "Gorras",
           "codigo": "pop-0004"
         },
         "imagen5": {
-          "url": "/Public-Graphic-SA/img/material-pop-05.webp",
+          "url": "/public-graphic-sa/img/material-pop-05.webp",
           "alt": "Material p.o.p 5",
           "titulo": "Jarros - Termos",
           "codigo": "pop-0005"
@@ -72,18 +72,18 @@
     },
     {
       "id": 3,
-      "imagen": "/Public-Graphic-SA/img/3.webp",
+      "imagen": "/public-graphic-sa/img/3.webp",
       "titulo": "Branding",
       "lista": ["Carros", "Furgonetas", "Mamparas (Parcial Completo)"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/branding-01.webp",
+          "url": "/public-graphic-sa/img/branding-01.webp",
           "alt": "Branding 1",
           "titulo": "Branding Completo",
           "codigo": "brand-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/branding-02.webp",
+          "url": "/public-graphic-sa/img/branding-02.webp",
           "alt": "Branding 2",
           "titulo": "Branding Parcial",
           "codigo": "brand-0002"
@@ -92,12 +92,12 @@
     },
     {
       "id": 4,
-      "imagen": "/Public-Graphic-SA/img/4.webp",
+      "imagen": "/public-graphic-sa/img/4.webp",
       "titulo": "Diseños",
       "lista": ["Logos", "Campañas", "Manuales"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/disenos-01.webp",
+          "url": "/public-graphic-sa/img/disenos-01.webp",
           "alt": "Diseños 1",
           "titulo": "Logos",
           "codigo": "des-0001"
@@ -106,7 +106,7 @@
     },
     {
       "id": 5,
-      "imagen": "/Public-Graphic-SA/img/5.webp",
+      "imagen": "/public-graphic-sa/img/5.webp",
       "titulo": "Papeleria",
       "lista": [
         "Calendarios",
@@ -119,31 +119,31 @@
       ],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/papeleria-01.webp",
+          "url": "/public-graphic-sa/img/papeleria-01.webp",
           "alt": "Papeleria 1",
           "titulo": "Calendarios",
           "codigo": "pape-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/papeleria-02.webp",
+          "url": "/public-graphic-sa/img/papeleria-02.webp",
           "alt": "Papeleria 2",
           "titulo": "Volantes",
           "codigo": "pape-0002"
         },
         "imagen3": {
-          "url": "/Public-Graphic-SA/img/papeleria-03.webp",
+          "url": "/public-graphic-sa/img/papeleria-03.webp",
           "alt": "Papeleria 3",
           "titulo": "Agendas",
           "codigo": "pape-0003"
         },
         "imagen4": {
-          "url": "/Public-Graphic-SA/img/papeleria-04.webp",
+          "url": "/public-graphic-sa/img/papeleria-04.webp",
           "alt": "Papeleria 4",
           "titulo": "Revistas",
           "codigo": "pape-0004"
         },
         "imagen5": {
-          "url": "/Public-Graphic-SA/img/papeleria-05.webp",
+          "url": "/public-graphic-sa/img/papeleria-05.webp",
           "alt": "Papeleria 5",
           "titulo": "Tarjeta de presentación",
           "codigo": "pape-0005"
@@ -152,7 +152,7 @@
     },
     {
       "id": 6,
-      "imagen": "/Public-Graphic-SA/img/6.webp",
+      "imagen": "/public-graphic-sa/img/6.webp",
       "titulo": "Sublimacion",
       "lista": [
         "Bordado",
@@ -164,19 +164,19 @@
       ],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/sublimacion-01.webp",
+          "url": "/public-graphic-sa/img/sublimacion-01.webp",
           "alt": "Sublimacion 1",
           "titulo": "Sublimacion",
           "codigo": "sub-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/sublimacion-02.webp",
+          "url": "/public-graphic-sa/img/sublimacion-02.webp",
           "alt": "Sublimacion 2",
           "titulo": "Bordado",
           "codigo": "sub-0002"
         },
         "imagen3": {
-          "url": "/Public-Graphic-SA/img/sublimacion-03.webp",
+          "url": "/public-graphic-sa/img/sublimacion-03.webp",
           "alt": "Sublimacion 3",
           "titulo": "Serigrafia",
           "codigo": "sub-0003"
@@ -185,18 +185,18 @@
     },
     {
       "id": 7,
-      "imagen": "/Public-Graphic-SA/img/7.webp",
+      "imagen": "/public-graphic-sa/img/7.webp",
       "titulo": "Uniformes",
       "lista": ["Industrial", "Medico"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/uniformes-01.webp",
+          "url": "/public-graphic-sa/img/uniformes-01.webp",
           "alt": "Uniformes 1",
           "titulo": "Uniforme industrial",
           "codigo": "uni-0001"
         },
         "imagen2": {
-          "url": "/Public-Graphic-SA/img/uniformes-02.webp",
+          "url": "/public-graphic-sa/img/uniformes-02.webp",
           "alt": "Uniformes 2",
           "titulo": "Uniforme medico",
           "codigo": "uni-0002"
@@ -205,12 +205,12 @@
     },
     {
       "id": 8,
-      "imagen": "/Public-Graphic-SA/img/8.webp",
+      "imagen": "/public-graphic-sa/img/8.webp",
       "titulo": "Impresión",
       "lista": ["Stickers"],
       "carrusel": {
         "imagen1": {
-          "url": "/Public-Graphic-SA/img/impresion-01.webp",
+          "url": "/public-graphic-sa/img/impresion-01.webp",
           "alt": "Impresión 1",
           "titulo": "Stickers",
           "codigo": "imp-0001"
